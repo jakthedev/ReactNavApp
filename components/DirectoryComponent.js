@@ -20,7 +20,7 @@ function Directory(props) {
         renderItem={renderDirectoryItem} 
         keyExtractor={item => item.id.toString()}
         />
-    )
+    );
 } 
 
 export default Directory;

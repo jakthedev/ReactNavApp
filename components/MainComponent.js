@@ -1,4 +1,4 @@
-import React, { component } from 'react'; 
+import React, { Component } from 'react'; 
 import Directory from './DirectoryComponent'; 
 import { CAMPSITES } from '../shared/campsites'; 
 
@@ -11,7 +11,7 @@ class Main extends Component {
     }
 
     render() {
-        return <Directory campsites={ this.state.campsites} />
+        return <Directory campsites={ this.state.campsites} />;
     }
 
 }  
