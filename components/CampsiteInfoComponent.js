@@ -9,8 +9,9 @@ function RenderCampsite({campsite}) {
             <Card 
                 featuredTitle={campsite.name} 
                 image={require('./images/react-lake.jpg')}>
-                    <Text style={{margin:10}}>
 
+                    <Text style={{margin:10}}>
+                        {campsite.description}
                     </Text>
                 </Card>
         );
@@ -19,7 +20,7 @@ function RenderCampsite({campsite}) {
 }
 
 function CampsiteInfo(props) {
-   return <RenderCampsite campsite={props.campsite} />
+   return <RenderCampsite campsite={props.campsite} />;
 }
 
 export default CampsiteInfo; 
